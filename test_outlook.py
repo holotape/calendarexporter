@@ -17,7 +17,6 @@ def main():
         now = datetime.datetime.now(local_tz)
         future = now + datetime.timedelta(days=90)  # Set a limit to 3 months in the future
 
-        # Filter items within the specified date range using a for loop
         filtered_items = []
         for item in items:
             if now <= item.Start <= future:
